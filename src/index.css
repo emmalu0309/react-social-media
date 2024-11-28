@@ -69,3 +69,28 @@ button:focus-visible {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; 
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-container {
+  flex-shrink: 0; 
+}
+/* 隱藏滾動條的樣式 */
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome、Safari 和 Edge */
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE 和 Edge */
+  scrollbar-width: none; /* Firefox */
+}
